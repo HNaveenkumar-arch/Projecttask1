@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="comman.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +30,11 @@
       <a href="404page.html">Services</a>
       <a href="404page.html">Blog</a>
       <a href="404page.html">Contact</a>
+      <div class="mob-login">
+        <a href="404page.html" class="login-btn btn-outline">Login</a>
+      </div>
     </nav>
-    <div class="nav-links" id="nav-links">
+    <div class="nav-links log" id="nav-links">
       <a href="404page.html" class="login-btn btn-outline">Login</a>
     </div>
   </header>
@@ -57,7 +61,7 @@
         </div>
       </div>
 
-      <div class="carousel-wrapper">
+      <div class="carousel-wrapper" data-aos="fade-up">
         <div class="carousel-track">
           <div class="card card-blue">
             <img src="./asset/Hero1.webp" alt="Meeting" class="card-img" />
@@ -128,7 +132,7 @@
         </div>
       </div>
     </section>
-    <section class="marquee-section">
+    <section class="marquee-section" data-aos="fade-down">
       <div class="marquee-content">
         <span class="marquee-text">STRATEGIC LEADERSHIP &nbsp;•&nbsp; ENTERPRISE SOLUTIONS
           &nbsp;•&nbsp; GLOBAL INNOVATION &nbsp;•&nbsp; SUSTAINABLE GROWTH
@@ -166,7 +170,7 @@
     </section>
     <section class="about-static">
       <div class="about-container">
-        <div class="about-header">
+        <div class="about-header" data-aos="fade">
           <span class="head-chips">About Us</span>
           <h1>Driving institutional growth through digital innovation</h1>
           <p class="lead-text">
@@ -176,11 +180,11 @@
         </div>
 
         <div class="about-grid">
-          <div class="about-image-feature">
+          <div class="about-image-feature" data-aos="fade-down">
             <img src="./asset/Aboutpage.webp" alt="Corporate Strategy" />
           </div>
           <div class="services-list">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
               <div class="service-icon">01</div>
               <div class="service-text">
                 <h3>Strategic Consulting</h3>
@@ -191,7 +195,7 @@
               </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
               <div class="service-icon">02</div>
               <div class="service-text">
                 <h3>Digital Transformation</h3>
@@ -202,7 +206,7 @@
               </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
               <div class="service-icon">03</div>
               <div class="service-text">
                 <h3>Operational Efficiency</h3>
@@ -213,7 +217,7 @@
               </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
               <div class="service-icon">04</div>
               <div class="service-text">
                 <h3>Enterprise Solutions</h3>
@@ -229,8 +233,8 @@
     </section>
     <section class="services">
       <div class="services-inner">
-        <div class="head-chips chips-overlay">Services</div>
-        <div class="services-head">
+        <div class="head-chips chips-overlay" data-aos="fade-up">Services</div>
+        <div class="services-head" data-aos="fade">
           <h1>Strategic frameworks engineered for scale</h1>
           <p>
             We deliver high-impact corporate solutions designed to navigate
@@ -238,49 +242,57 @@
           </p>
         </div>
         <div class="services-list">
-          <a href="404page.html" class="service-row">
-            <div class="row-num">01</div>
-            <div class="row-title">Enterprise Architecture</div>
-            <div class="row-desc">
-              Designing robust technical ecosystems that align with global
-              business goals and provide a foundation for long-term
-              scalability.
-            </div>
-            <div class="row-cta">Learn More</div>
-          </a>
-          <a href="404page.html" class="service-row">
-            <div class="row-num">02</div>
-            <div class="row-title">Cloud Modernization</div>
-            <div class="row-desc">
-              Transitioning legacy operations into high-performance cloud
-              environments to enhance agility and global reach.
-            </div>
-            <div class="row-cta">Learn More</div>
-          </a>
-          <a href="404page.html" class="service-row">
-            <div class="row-num">03</div>
-            <div class="row-title">Cybersecurity & Governance</div>
-            <div class="row-desc">
-              Implementing proactive defense mechanisms and compliance
-              frameworks to protect corporate assets globally.
-            </div>
-            <div class="row-cta">Learn More</div>
-          </a>
-          <a href="404page.html" class="service-row">
-            <div class="row-num">04</div>
-            <div class="row-title">Predictive Data Intelligence</div>
-            <div class="row-desc">
-              Harnessing advanced analytics and machine learning to transform
-              raw enterprise data into actionable strategic insights.
-            </div>
-            <div class="row-cta">Learn More</div>
-          </a>
+          <div data-aos="fade-up">
+            <a href="404page.html" class="service-row">
+              <div class="row-num">01</div>
+              <div class="row-title">Enterprise Architecture</div>
+              <div class="row-desc">
+                Designing robust technical ecosystems that align with global
+                business goals and provide a foundation for long-term
+                scalability.
+              </div>
+              <div class="row-cta">Learn More</div>
+            </a>
+          </div>
+          <div data-aos="fade-up">
+            <a href="404page.html" class="service-row">
+              <div class="row-num">02</div>
+              <div class="row-title">Cloud Modernization</div>
+              <div class="row-desc">
+                Transitioning legacy operations into high-performance cloud
+                environments to enhance agility and global reach.
+              </div>
+              <div class="row-cta">Learn More</div>
+            </a>
+          </div>
+          <div data-aos="fade-up">
+            <a href="404page.html" class="service-row">
+              <div class="row-num">03</div>
+              <div class="row-title">Cybersecurity & Governance</div>
+              <div class="row-desc">
+                Implementing proactive defense mechanisms and compliance
+                frameworks to protect corporate assets globally.
+              </div>
+              <div class="row-cta">Learn More</div>
+            </a>
+          </div>
+          <div data-aos="fade-up">
+            <a href="404page.html" class="service-row">
+              <div class="row-num">04</div>
+              <div class="row-title">Predictive Data Intelligence</div>
+              <div class="row-desc">
+                Harnessing advanced analytics and machine learning to transform
+                raw enterprise data into actionable strategic insights.
+              </div>
+              <div class="row-cta">Learn More</div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section class="testimonial-light">
-      <div class="head-chips">Client Success</div>
-      <div class="testimonial-head">
+      <div class="head-chips" data-aos="fade-up">Client Success</div>
+      <div class="testimonial-head" data-aos="fade-up">
         <h1>
           Transforming enterprise operations <br />
           through strategic partnership
@@ -289,7 +301,7 @@
 
       <div class="testimonial-container">
         <div class="testimonial-image-col">
-          <div class="image-frame">
+          <div class="image-frame" data-aos="fade-down">
             <img src="./asset/client66.webp" alt="Executive" id="main-img" />
             <div class="frame-border"></div>
           </div>
@@ -311,7 +323,7 @@
             <div class="avatar-count">+12k professionals</div>
           </div>
 
-          <div class="testimonial-text-col">
+          <div class="testimonial-text-col" data-aos="fade-up">
             <div class="quote-icon">“</div>
             <blockquote id="testimonial-quote">
               The digital framework provided by the team has streamlined our
@@ -330,8 +342,8 @@
     </section>
     <div class="faq-sec">
       <section class="faq">
-        <div class="head-chips">Resources & Support</div>
-        <div class="faq-head">
+        <div class="head-chips" data-aos="fade-up">Resources & Support</div>
+        <div class="faq-head" data-aos="fade-up">
           <h1>
             Enterprise Solutions <br />
             & Implementation FAQ
@@ -339,7 +351,7 @@
         </div>
 
         <div class="faq-container">
-          <div class="faq-content active">
+          <div class="faq-content active" data-aos="fade-up" data-aos-delay="200">
             <div class="faq-header">
               <div class="faq-q">
                 How does your strategic framework accelerate digital
@@ -358,7 +370,7 @@
               </p>
             </div>
           </div>
-          <div class="faq-content">
+          <div class="faq-content" data-aos="fade-up" data-aos-delay="300">
             <div class="faq-header">
               <div class="faq-q">
                 What is the typical ROI timeline for operational optimization?
@@ -375,7 +387,7 @@
               </p>
             </div>
           </div>
-          <div class="faq-content">
+          <div class="faq-content" data-aos="fade-up" data-aos-delay="400">
             <div class="faq-header">
               <div class="faq-q">
                 Can your solutions integrate with existing global ERP systems?
@@ -392,7 +404,7 @@
               </p>
             </div>
           </div>
-          <div class="faq-content">
+          <div class="faq-content" data-aos="fade-up" data-aos-delay="500">
             <div class="faq-header">
               <div class="faq-q">
                 How do you handle cross-border regulatory compliance?
@@ -417,7 +429,7 @@
       <div class="cta-glow"></div>
 
       <div class="cta-container">
-        <div>
+        <div data-aos="fade-up" data-aos-delay="200">
           <h2 class="cta-title">
             Ready to scale your <br>
             <span class="text-gradient">digital presence?</span>
@@ -426,7 +438,7 @@
             Leverage our expertise to build high-performance solutions tailored to your brand's unique needs.
           </p>
         </div>
-        <div class="cta-actions">
+        <div class="cta-actions" data-aos="fade-down" data-aos-delay="100">
           <a href="404page.html" class="btn-primary">Start a Project</a>
           <a href="404page.html" class="btn-secondary">View Case Studies</a>
         </div>
@@ -434,7 +446,7 @@
     </section>
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-section brand-col">
+        <div class="footer-section brand-col" data-aos="fade-down" data-aos-delay="100">
           <a href="index.html">
             <img src="./asset/logo1.webp" alt="Stackly Logo" class="footer-logo" />
           </a>
@@ -447,7 +459,7 @@
             <a href="404page.html"><i class="fa-brands fa-x-twitter"></i></a>
           </div>
         </div>
-        <div class="footer-section">
+        <div class="footer-section" data-aos="fade-down" data-aos-delay="200">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -457,14 +469,14 @@
             <li><a href="404page.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div class="footer-section" data-aos="fade-down" data-aos-delay="300">
           <h3>Contact Us</h3>
           <ul class="contact-info">
             <li><i class="fa-regular fa-envelope"></i> support@stackly.com</li>
             <li><i class="fa-solid fa-location-dot"></i> Salem City, Tamil Nadu</li>
           </ul>
         </div>
-        <div class="footer-section newsletter-col">
+        <div class="footer-section newsletter-col" data-aos="fade-down" data-aos-delay="400">
           <h3>Stay Updated</h3>
           <p>Subscribe to our newsletter for the latest tech insights and company updates.</p>
           <form class="newsletter-form" action="#" method="POST">
@@ -480,6 +492,17 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 100,
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        mirror: false,
+        anchorPlacement: 'top-bottom',
+      });
+    </script>
 </body>
 
 </html>

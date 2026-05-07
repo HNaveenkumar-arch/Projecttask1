@@ -49,6 +49,10 @@ body {
   border-radius: 50px;
   font-weight: bold;
 }
+.mob-login a {
+  display: none;
+  padding: 8px 20px;
+}
 .login-btn {
   padding: 8px 20px;
   border-radius: 5px;
@@ -367,6 +371,8 @@ body {
   .nav-links {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     position: absolute;
     top: 100%;
     left: 0;
@@ -387,7 +393,7 @@ body {
   }
   .nav-links a {
     display: flex;
-    width: 100%;
+    width: fit-content;
     text-align: center;
     padding: 15px 0;
     color: #1a1a1a;
@@ -402,6 +408,13 @@ body {
     color: #eeeeee;
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .mob-login {
+    display: block;
+  }
+  .mob-login a {
+    padding: 08px 20px;
   }
 
   .footer-container {
