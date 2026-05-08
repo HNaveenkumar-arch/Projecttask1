@@ -2,20 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <link rel="stylesheet" href="404paghe.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="404paghe.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <main class="pagecontent">
-        <h2 class="error-title">404 Page Not Found</h2>
-        <h3 class="error-subtitle">The link is broken or the page moved.</h3>
+  <main class="pagecontent">
+    <h2 class="error-title" data-aos="fade-up" data-aos-delay="200">404 Page Not Found</h2>
+    <h3 class="error-subtitle" data-aos="fade-up" data-aos-delay="200">The link is broken or the page moved.</h3>
 
-        <a href="index.html" class="home-btn">Back to Home</a>
-    </main>
-
+    <a href="index.html" class="home-btn" data-aos="fade-up" data-aos-delay="200">Back to Home</a>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 100,
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+  </script>
 </body>
 
 </html>
