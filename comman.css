@@ -414,7 +414,10 @@ body {
     display: block;
   }
   .mob-login a {
-    padding: 08px 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    border-radius: 30px;
+    color: #ffffff;
   }
 
   .footer-container {
