@@ -42,7 +42,8 @@ body {
   font-weight: bold;
   transition: all 0.4s ease;
 }
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   background-color: #2563eb;
   color: #eeeeee;
   padding: 8px 20px;
@@ -321,7 +322,7 @@ body {
   border-color: #666666;
 }
 
-.newsletter-form a {
+.newsletter-form button {
   padding: 12px 24px;
   background-color: #ffffff;
   color: #0a0a0a;

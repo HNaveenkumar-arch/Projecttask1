@@ -25,7 +25,7 @@
     </div>
 
     <nav class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="404page.html">About</a>
       <a href="404page.html">Services</a>
       <a href="404page.html">Blog</a>
@@ -479,9 +479,13 @@
         <div class="footer-section newsletter-col" data-aos="fade-down" data-aos-delay="400">
           <h3>Stay Updated</h3>
           <p>Subscribe to our newsletter for the latest tech insights and company updates.</p>
-          <form class="newsletter-form" action="#" method="POST">
-            <input type="email" placeholder="Enter your email" required>
-            <a href="404page.html">Subscribe</a>
+          <form class="newsletter-form" id="newsletterForm" action="#" method="POST">
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <!-- Changed <a> to a <button> so it triggers form submission -->
+            <button type="submit">Subscribe</button>
+
+            <!-- Container for validation messages -->
+            <div id="validationMessage" style="margin-top: 8px; font-size: 14px; display: none;"></div>
           </form>
         </div>
 

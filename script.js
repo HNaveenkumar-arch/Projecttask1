@@ -105,3 +105,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const emailInput = document.getElementById('emailInput').value.trim();
+    const messageDiv = document.getElementById('validationMessage');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailInput === "") {
+        showMessage("Please enter an email address.", "red");
+    } else if (!emailPattern.test(emailInput)) {
+        showMessage("Please enter a valid email address.", "red");
+    } else {
+        window.location.href = "404page.html";
+    }
+    function showMessage(text, color) {
+        messageDiv.textContent = text;
+        messageDiv.style.color = color;
+        messageDiv.style.display = "block";
+    }
+});
